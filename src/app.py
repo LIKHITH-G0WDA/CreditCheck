@@ -7,8 +7,8 @@ import os
 app = Flask(__name__)
 
 # Load model and scaler
-model = joblib.load('credit_model.pkl')
-scaler = joblib.load('scaler.pkl')
+model = joblib.load('src/credit_model.pkl')
+scaler = joblib.load('src/scaler.pkl')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
